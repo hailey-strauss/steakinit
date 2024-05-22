@@ -1,6 +1,6 @@
 /* Style for body specifies a background color */
 body {
-  background-color: #1d1d1c;
+  background-color: black;
 }
 /* Style to create a fluid image */
 img {
@@ -276,7 +276,7 @@ footer {
 @media only screen and (min-width: 830px) {
   /* Style specifies width for container */
   #container {
-    background-color: #1d1d1c;
+    background-color: black;
   }
 
   /* Style to left align header */
