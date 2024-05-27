@@ -371,4 +371,23 @@ footer {
   .contact {
     color: white;
   }
+
+  /* Add this to your css/style.css file */
+
+  header img {
+    width: 100px; /* Initial size */
+    animation: growShrink 2s forwards; /* The animation will run once */
+  }
+
+  @keyframes growShrink {
+    0% {
+      width: 100px; /* Initial size */
+    }
+    50% {
+      width: 300px; /* Maximum size - adjust as needed */
+    }
+    100% {
+      width: 100px; /* Back to initial size */
+    }
+  }
 }
