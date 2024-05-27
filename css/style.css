@@ -372,22 +372,39 @@ footer {
     color: white;
   }
 
-  /* Add this to your css/style.css file */
+  /* This would be how it could how it gets bigger and then normal size */
+
+  /* header img { */
+  /* width: 100px; Initial size */
+  /* animation: growShrink 2s forwards; /* The animation will run once */
+  /* } */
+
+  /* @keyframes growShrink { */
+  /* 0% {
+      width: 100px; /* Initial size */
+  /* }  */
+  /* 50% {
+      width: 300px; /* Maximum size - adjust as needed */
+  /* }  */
+  /* 100% {
+      width: 100px; /* Back to initial size */
+  /* } */
+  /* } */
 
   header img {
-    width: 100px; /* Initial size */
-    animation: growShrink 2s forwards; /* The animation will run once */
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px below its final position */
+    animation: fadeInUp 2s forwards;
   }
 
-  @keyframes growShrink {
+  @keyframes fadeInUp {
     0% {
-      width: 100px; /* Initial size */
-    }
-    50% {
-      width: 300px; /* Maximum size - adjust as needed */
+      opacity: 0;
+      transform: translateY(50px); /* Start 50px below its final position */
     }
     100% {
-      width: 100px; /* Back to initial size */
+      opacity: 1;
+      transform: translateY(0); /* Final position */
     }
   }
 }
