@@ -407,4 +407,14 @@ footer {
       transform: translateY(0); /* Final position */
     }
   }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333; /* Adjust as needed */
+    z-index: 1000; /* Ensures the navbar stays on top */
+  }
+  .sticky + .content {
+    padding-top: 60px; /* Adjust as needed */
+  }
 }

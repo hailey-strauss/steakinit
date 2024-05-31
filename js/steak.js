@@ -1,22 +1,20 @@
-window.addEventListener("scroll", function () {
-  // code to be executed when user scrolls
-});
-
-// keep track of previous scroll position
+// Keep track of previous scroll position
 let prevScrollPos = window.pageYOffset;
 
+// Add scroll event listener
 window.addEventListener("scroll", function () {
-  // current scroll position
+  // Current scroll position
   const currentScrollPos = window.pageYOffset;
 
+  // Check if the user has scrolled up or down
   if (prevScrollPos > currentScrollPos) {
-    // user has scrolled up
-    document.querySelector(".navbar").classList.add("show");
+    // User has scrolled up
+    document.getElementById("navbar").classList.add("sticky");
   } else {
-    // user has scrolled down
-    document.querySelector(".navbar").classList.remove("show");
+    // User has scrolled down
+    document.getElementById("navbar").classList.remove("sticky");
   }
 
-  // update previous scroll position
+  // Update previous scroll position
   prevScrollPos = currentScrollPos;
 });
