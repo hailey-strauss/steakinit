@@ -180,6 +180,15 @@ footer {
     height: auto; /* Maintain aspect ratio */
   }
 
+  /* New styles for fixed top menu */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    padding: 10px 0;
+  }
   /* Style specifies a horizontal display for navigation links */
   nav li {
     display: inline;
@@ -290,6 +299,16 @@ footer {
     height: auto;
   }
 
+  /* New styles for fixed top menu */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    padding: 10px 0;
+  }
+
   /* Style for nav specifies a float, margin, and width */
   nav {
     float: right;
@@ -372,25 +391,6 @@ footer {
     color: white;
   }
 
-  /* This would be how it could how it gets bigger and then normal size */
-
-  /* header img { */
-  /* width: 100px; Initial size */
-  /* animation: growShrink 2s forwards; /* The animation will run once */
-  /* } */
-
-  /* @keyframes growShrink { */
-  /* 0% {
-      width: 100px; /* Initial size */
-  /* }  */
-  /* 50% {
-      width: 300px; /* Maximum size - adjust as needed */
-  /* }  */
-  /* 100% {
-      width: 100px; /* Back to initial size */
-  /* } */
-  /* } */
-
   header img {
     opacity: 0;
     transform: translateY(50px); /* Start 50px below its final position */
@@ -406,15 +406,5 @@ footer {
       opacity: 1;
       transform: translateY(0); /* Final position */
     }
-  }
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333; /* Adjust as needed */
-    z-index: 1000; /* Ensures the navbar stays on top */
-  }
-  .sticky + .content {
-    padding-top: 60px; /* Adjust as needed */
   }
 }
