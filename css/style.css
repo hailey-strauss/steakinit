@@ -2,10 +2,12 @@
 body {
   background-color: black;
 }
+
 /* Style to create a fluid image */
 img {
   max-width: 100%;
 }
+
 /* Styles for Mobile Layout */
 
 /* Style for the container centers the page and specifies the width */
@@ -22,8 +24,9 @@ header {
 
 /* Style for the header image */
 header img {
-  max-width: 200px;
-  height: auto;
+  width: 100%;
+  max-height: 300px; /* Adjust this value as needed */
+  object-fit: contain;
 }
 
 /* Style for nav specifies text properties */
@@ -33,6 +36,10 @@ nav {
   font-weight: bold;
   text-align: center;
   margin-top: -1em;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 2s forwards;
+  animation-delay: 1s; /* Delay the nav animation */
 }
 
 /* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins and padding for list items within the navigation */
@@ -96,7 +103,7 @@ footer {
 
   /* Style for the header image */
   header img {
-    max-width: 50%; /* Make sure the logo doesn't exceed the width of its container */
+    max-width: 100%; /* Make sure the logo doesn't exceed the width of its container */
     height: auto; /* Maintain aspect ratio */
   }
   main img {
@@ -169,7 +176,7 @@ footer {
 
   /* Style for the header image */
   header img {
-    max-width: 40%; /* Make sure the logo doesn't exceed the width of its container */
+    max-width: 100%; /* Make sure the logo doesn't exceed the width of its container */
     height: auto; /* Maintain aspect ratio */
   }
 
@@ -279,8 +286,12 @@ footer {
 
   /* Style for the header image */
   header img {
-    max-width: 220px;
+    max-width: 100%;
+    max-height: 300px; /* Adjust this value as needed */
     height: auto;
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px below its final position */
+    animation: fadeInUp 2s forwards;
   }
 
   /* Style for nav specifies a float, margin, and width */
@@ -340,7 +351,6 @@ footer {
     border: 1px solid #ccc;
     box-sizing: border-box;
   }
-
   input[type="submit"] {
     width: 100%;
     padding: 10px;
@@ -354,31 +364,20 @@ footer {
     background-color: #0000ff;
   }
 
-  /* Style specifies to hide the mobile class */
-  .mobile {
-    display: inline;
-    color: white;
-  }
-
   /* Target email links with mailto attribute */
   .contact {
     color: white;
   }
+}
 
-  header img {
+/* Keyframes for fadeInUp animation */
+@keyframes fadeInUp {
+  0% {
     opacity: 0;
     transform: translateY(50px); /* Start 50px below its final position */
-    animation: fadeInUp 2s forwards;
   }
-
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(50px); /* Start 50px below its final position */
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0); /* Final position */
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move to its final position */
   }
 }
