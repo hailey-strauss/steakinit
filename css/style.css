@@ -35,13 +35,6 @@ nav {
   margin-top: -1em;
 }
 
-/* Style specifies padding and margins for unordered list */
-nav ul {
-  padding: 0;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-
 /* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins and padding for list items within the navigation */
 nav li {
   border-radius: 2em;
@@ -180,15 +173,6 @@ footer {
     height: auto; /* Maintain aspect ratio */
   }
 
-  /* New styles for fixed top menu */
-  nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: black;
-    z-index: 1000;
-    padding: 10px 0;
-  }
   /* Style specifies a horizontal display for navigation links */
   nav li {
     display: inline;
@@ -297,16 +281,6 @@ footer {
   header img {
     max-width: 220px;
     height: auto;
-  }
-
-  /* New styles for fixed top menu */
-  nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: black;
-    z-index: 1000;
-    padding: 10px 0;
   }
 
   /* Style for nav specifies a float, margin, and width */
