@@ -62,6 +62,20 @@ nav li a {
   margin-bottom: 20px;
 }
 
+/* Center the image in the About Us section */
+#container section#about img {
+  display: block;
+  margin: 0 auto; /* This centers the image horizontally */
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+}
+
+/* Center the image in the About Us section */
+#container section#menu img {
+  display: block;
+  margin: 0 auto; /* This centers the image horizontally */
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+}
+
 /* Style for the header specifies top margin, background color, rounded corners, and center align content */
 header {
   text-align: left;
@@ -78,6 +92,13 @@ header img {
 /* Add margin or padding to the welcome section */
 #container section#welcome {
   padding-top: 20px; /* Adjust this value to ensure h1 is not cut off */
+}
+
+/* Center the image in the About Us section */
+#container section#about img {
+  display: block;
+  margin: 0 auto; /* This centers the image horizontally */
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
 }
 
 /* Style for nav specifies text properties */
