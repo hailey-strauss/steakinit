@@ -161,6 +161,60 @@ footer {
   display: none;
 }
 
+/* Popup container - hidden by default */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above all other content */
+}
+
+/* Popup content */
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+}
+
+/* Close button (X) */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Popup heading */
+.popup h2 {
+  margin-top: 0;
+}
+
+/* Popup button */
+.popup button {
+  background-color: #0000ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.popup button:hover {
+  background-color: #00008b;
+}
+
 /* Media query for mobile layout targets screens with a maximum width of 659px. */
 @media only screen and (max-width: 659px) {
   /* Hide images within the section element */
