@@ -150,6 +150,31 @@ main {
   color: #ffff;
 }
 
+/* Style for the contact section */
+#contact {
+  text-align: center; /* Center align text inside the contact section */
+  margin: 0 auto; /* Center align the section itself */
+  padding: 20px; /* Add padding for spacing */
+  max-width: 600px; /* Adjust the max-width to your preference */
+}
+
+/* Ensure the form elements are centered within the contact section */
+#contact form {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Optional: Center align the individual elements within the form */
+#contact form label,
+#contact form input,
+#contact form textarea,
+#contact form input[type="submit"] {
+  display: block;
+  width: 100%;
+  max-width: 500px; /* Limit the width of form elements */
+  margin: 10px auto; /* Center align and space out form elements */
+}
+
 /* Style for the footer specifies font size, text alignment, and top margin */
 footer {
   font-size: 0.8em;
