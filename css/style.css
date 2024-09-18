@@ -8,6 +8,13 @@ img {
   max-width: 100%;
 }
 
+#cont_50125346ec5da4acd7a59b70b33618bf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
 /* Center the navigation items */
 nav {
   font-family: Georgia, "Times New Roman", serif;
