@@ -71,3 +71,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.onload = showPopup;
 });
+// Function to handle form submission
+document.addEventListener("DOMContentLoaded", function () {
+  var form = document.getElementById("contactForm");
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    var formData = new FormData(form); // Get form data
+    var xhr = new XMLHttpRequest(); // Create new XMLHttpRequest
+
+    // Setup the request
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+
+    // Define what happens on successful data submission
+    xhr.onload = function () {
+      if (xhr.status === 200 || xhr.status === 201) {
+        // If successful, display a success message
+        alert("Thank you for your message! We'll get back to you soon.");
+        form.reset(); // Optionally, reset the form
+      } else {
+        // If there's an error, display the error message
+        alert("Oops! Something went wrong.");
+      }
+    };
+
+    // Define what happens in case of an error
+    xhr.onerror = function () {
+      // If there's an error, display the error message
+      alert("Oops! There was an error submitting your form.");
+    };
+
+    // Send the form data
+    xhr.send(formData);
+  });
+});
