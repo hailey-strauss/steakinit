@@ -1,9 +1,12 @@
-/* Style for body specifies a background color */
 body {
-  background-color: black;
+  background-color: black; /* Fallback color */
+  background-image: url("img/background.jpg"); /* Path to your image */
+  background-repeat: repeat; /* Repeats the image */
+  background-size: auto; /* Adjust based on how you want the image to display */
+  background-position: top left; /* Optional: adjusts the starting position of the background */
 }
 
-/* Style to create a fluid image */
+/* Style for body specifies a background color */
 img {
   max-width: 100%;
 }
