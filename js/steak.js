@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { date: "11/20", event: "The Anchorage Apartments" },
     { date: "11/22", event: "Black Hog Brewing" },
     { date: "11/23", event: "Caius Farm Brewing" },
-    { date: "11/30", event: "Sticks For Soldiers" }
+    { date: "11/30", event: "Sticks For Soldiers" },
   ];
 
   window.onload = showPopup;
