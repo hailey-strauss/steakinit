@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { date: "11/12", event: "Quinnipiac" },
     { date: "11/13", event: "Aquilas Nest Vineyards" },
     { date: "11/14", event: "Caius Farm Brewing" },
+    { date: "11/15", event: "Tribus Beer Co." },
     { date: "11/16", event: "New England Brewing Co" },
     { date: "11/17", event: "White Hills Distillery" },
     { date: "11/20", event: "The Anchorage Apartments" },
