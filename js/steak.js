@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   let prevScrollPos = window.pageYOffset;
 
+  // Sticky Navbar Implementation
   window.addEventListener("scroll", function () {
     const currentScrollPos = window.pageYOffset;
     const navbar = document.getElementById("navbar");
@@ -22,12 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = document.querySelector(".close-btn");
   const claimOfferBtn = document.getElementById("claim-offer");
 
+  // Function to Format the Event Schedule
   function formatSchedule(events) {
     return events
       .map((event) => `<p><strong>${event.date}</strong>: ${event.event}</p>`)
       .join("");
   }
 
+  // Function to Show the Popup
   function showPopup() {
     const eventSchedule = document.getElementById("event-schedule");
     if (eventSchedule) {
@@ -36,12 +39,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  // Function to Hide the Popup
   function hidePopup() {
     if (popup) {
       popup.style.display = "none";
     }
   }
 
+  // Event Listeners for Popup
   if (closeBtn) {
     closeBtn.addEventListener("click", hidePopup);
   }
@@ -52,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // Show the Popup after 3 seconds
   setTimeout(showPopup, 3000);
 
   // Updated November events
@@ -75,30 +81,34 @@ document.addEventListener("DOMContentLoaded", function () {
   window.onload = showPopup;
 });
 
+// Contact Form Submission Logic
 document.addEventListener("DOMContentLoaded", function () {
-  var form = document.getElementById("contactForm");
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
+  const form = document.getElementById("contactForm");
 
-    var formData = new FormData(form);
-    var xhr = new XMLHttpRequest();
+  if (form) {
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
 
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
+      const formData = new FormData(form);
+      const xhr = new XMLHttpRequest();
 
-    xhr.onload = function () {
-      if (xhr.status === 200 || xhr.status === 201) {
-        alert("Thank you for your message! We'll get back to you soon.");
-        form.reset();
-      } else {
-        alert("Oops! Something went wrong.");
-      }
-    };
+      xhr.open(form.method, form.action);
+      xhr.setRequestHeader("Accept", "application/json");
 
-    xhr.onerror = function () {
-      alert("Oops! There was an error submitting your form.");
-    };
+      xhr.onload = function () {
+        if (xhr.status === 200 || xhr.status === 201) {
+          alert("Thank you for your message! We'll get back to you soon.");
+          form.reset();
+        } else {
+          alert("Oops! Something went wrong.");
+        }
+      };
 
-    xhr.send(formData);
-  });
+      xhr.onerror = function () {
+        alert("Oops! There was an error submitting your form.");
+      };
+
+      xhr.send(formData);
+    });
+  }
 });
