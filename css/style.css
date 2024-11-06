@@ -395,6 +395,14 @@ iframe {
     list-style: none; /* Removes default list styling */
     width: 100%; /* Adjust this width to control the spacing of nav items */
   }
+  nav ul {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  nav li {
+    margin: 0 20px;
+  }
 
   #container section#welcome {
     padding-top: 30px; /* Adjust this value to ensure h1 is not cut off */
