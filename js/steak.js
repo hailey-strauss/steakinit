@@ -19,16 +19,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const popup = document.getElementById("popup");
+  if (!popup) {
+    console.error("Popup element not found");
+  }
+
   const closeBtn = document.querySelector(".close-btn");
-  const claimOfferBtn = document.getElementById("claim-offer");
+  if (!closeBtn) {
+    console.error("Close button element not found");
+  }
 
   function formatSchedule(events) {
     return events
-      .map((event) => (
-        <p>
-          <strong>${event.date}</strong>: ${event.event}
-        </p>
-      ))
+      .map((event) => `<p><strong>${event.date}</strong>: ${event.event}</p>`)
       .join("");
   }
 
@@ -37,12 +39,16 @@ document.addEventListener("DOMContentLoaded", function () {
     if (eventSchedule) {
       eventSchedule.innerHTML = formatSchedule(events);
       popup.style.display = "flex";
+    } else {
+      console.error("Event schedule element not found");
     }
   }
 
   function hidePopup() {
     if (popup) {
       popup.style.display = "none";
+    } else {
+      console.error("Popup element not found when trying to hide");
     }
   }
 
@@ -56,7 +62,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  setTimeout(showPopup, 3000);
+  setTimeout(() => {
+    if (popup) {
+      showPopup();
+    }
+  }, 3000);
 
   // Updated November events
   const events = [
@@ -76,11 +86,20 @@ document.addEventListener("DOMContentLoaded", function () {
     { date: "11/30", event: "Sticks For Soldiers" },
   ];
 
-  window.onload = showPopup;
+  window.onload = () => {
+    if (popup) {
+      showPopup();
+    }
+  };
 });
 
 document.addEventListener("DOMContentLoaded", function () {
   var form = document.getElementById("contactForm");
+  if (!form) {
+    console.error("Contact form element not found");
+    return;
+  }
+
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
