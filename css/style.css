@@ -33,11 +33,12 @@ nav {
 /* Ensure ul is inline-block to center it */
 nav ul {
   display: flex;
-  justify-content: space-around; /* Distributes the items evenly */
+  justify-content: space-between; /* Distributes the items evenly */
   padding: 0;
   margin: 0;
   list-style: none; /* Removes default list styling */
-  width: 80%; /* Adjust this width to control the spacing of nav items */
+  width: 65%; /* Adjust this width to control the spacing of nav items */
+  gap: 20px; /* Adds consistent spacing */
 }
 
 /* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins and padding for list items within the navigation */
@@ -47,7 +48,7 @@ nav li {
   margin: 0.3em;
   padding: 0.4em;
   display: inline;
-  margin: 0; /* Adjust the spacing between nav items */
+  margin: 0 20px; /* Reduced margin */
 }
 
 /* Style changes navigation link text color to white and removes the underline */
