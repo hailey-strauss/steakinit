@@ -302,9 +302,6 @@ header img {
   max-width: 100%; /* Make sure the logo doesn't exceed the width of its container */
   height: auto; /* Maintain aspect ratio */
 }
-main img {
-  display: none;
-}
 
 /* Style hides the tablet class */
 .tablet {
