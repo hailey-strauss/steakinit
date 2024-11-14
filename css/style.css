@@ -185,8 +185,8 @@ main {
 
 /* Style each social media icon */
 .social-media a img {
-  width: 100px; /* Increase width */
-  height: 100px; /* Increase height */
+  width: 80px; /* Increase width */
+  height: 80px; /* Increase height */
   object-fit: contain; /* Ensures image scales without distortion */
 }
 
