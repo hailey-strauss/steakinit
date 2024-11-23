@@ -25,19 +25,18 @@ nav {
   transform: translateY(50px);
   animation: fadeInUp 2s forwards;
   animation-delay: 1s; /* Delay the nav animation */
-  display: flex;
-  justify-content: center;
   width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: black;
 }
 
 /* Ensure ul is inline-block to center it */
 nav ul {
-  display: flex;
-  justify-content: space-between; /* Distributes the items evenly */
   padding: 0;
   margin: 0;
   list-style: none; /* Removes default list styling */
-  width: 65%; /* Adjust this width to control the spacing of nav items */
+  width: 100%; /* Adjust this width to control the spacing of nav items */
   gap: 20px; /* Adds consistent spacing */
 }
 
@@ -354,9 +353,6 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #0000ff;
 }
-iframe {
-  display: none;
-}
 
 /* Media query for tablet layout targets screen size with a minimum width of 660px.  */
 
@@ -522,12 +518,10 @@ iframe {
 
   /* Style for nav specifies a float, margin, and width */
   nav {
-    float: right;
-    margin-top: -7em;
-    margin-right: 9em;
     margin-bottom: 0;
-    width: 65%;
     margin-top: 30px; /* Adjust this value to ensure nav is below header */
+    margin-right: auto;
+    margin-left: au;
   }
 
   #container section#welcome {
