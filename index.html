@@ -7,8 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    
-    </div>
+    <a
+      class="weatherwidget-io"
+      href="https://forecast7.com/en/41d60n73d09/connecticut/?unit=us"
+      data-label_1="CONNECTICUT"
+      data-label_2="WEATHER"
+      data-theme="original"
+      >CONNECTICUT WEATHER</a
+    >
+    <script>
+      !(function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://weatherwidget.io/js/widget.min.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      })(document, "script", "weatherwidget-io-js");
+    </script>
     <div id="popup" class="popup">
       <div class="popup-content">
         <span class="close-btn">&times;</span>
@@ -38,7 +56,6 @@
       <main>
         <!-- Welcome Section -->
         <section id="welcome">
-          <!-- <div class="embedsocial-hashtag" data-ref="eecf8153ca509b09715cbecb2939ef2be99cba5b"></div> <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script> -->
           <h1>Welcome to Steak-In-It</h1>
           <p>
             Welcome to Steak-In-It, Fairfield County’s premier cheesesteak food
@@ -87,24 +104,42 @@
         </section>
 
         <!-- How It's Done Section -->
-         <section id="howitsdone">
+        <section id="howitsdone">
           <h1>How It's Done</h1>
           <p>
-            Making your cheesesteak on our truck is a flavorful process that combines skill, speed, and the freshest ingredients. It all starts with high-quality, thinly sliced steak, seasoned and cooked on a hot griddle to create tender, juicy bites. The sizzling meat is carefully chopped on the griddle as it cooks, blending with onions, peppers, and your choice of American or provolone cheese for a rich, melty combination.
+            Making your cheesesteak on our truck is a flavorful process that
+            combines skill, speed, and the freshest ingredients. It all starts
+            with high-quality, thinly sliced steak, seasoned and cooked on a hot
+            griddle to create tender, juicy bites. The sizzling meat is
+            carefully chopped on the griddle as it cooks, blending with onions,
+            peppers, and your choice of American or provolone cheese for a rich,
+            melty combination.
           </p>
           <p>
-            Once perfectly cooked, this warm, gooey mixture is scooped onto a fresh, lightly toasted sesame grinder, the perfect vessel to hold all that juicy goodness. It’s all about the bread!
+            Once perfectly cooked, this warm, gooey mixture is scooped onto a
+            fresh, lightly toasted sesame grinder, the perfect vessel to hold
+            all that juicy goodness. It’s all about the bread!
           </p>
           <p>
-            For the bold and creative, Steak-In-It offers a range of sauces to top off your cheesesteak. Hit every flavor profile with options like chipotle aioli, garlic aioli, mayo, honey BBQ, teriyaki, mango habanero, and, of course, classic cheese wiz.
+            For the bold and creative, Steak-In-It offers a range of sauces to
+            top off your cheesesteak. Hit every flavor profile with options like
+            chipotle aioli, garlic aioli, mayo, honey BBQ, teriyaki, mango
+            habanero, and, of course, classic cheese wiz.
           </p>
           <p>
-            Pair your cheesesteak with one of our amazing fries or appetizers for a truly satisfying meal! Our selection has something for everyone.
+            Pair your cheesesteak with one of our amazing fries or appetizers
+            for a truly satisfying meal! Our selection has something for
+            everyone.
           </p>
           <p>
-            From start to finish, the preparation is a sensory experience. The aroma of grilled steak, the sound of sizzling onions, and the sight of melted cheese make our cheesesteaks an irresistible choice for customers lined up at the truck. Each sandwich is made to order—no premade meals here—served hot and fresh, the ultimate comfort food on the go.
+            From start to finish, the preparation is a sensory experience. The
+            aroma of grilled steak, the sound of sizzling onions, and the sight
+            of melted cheese make our cheesesteaks an irresistible choice for
+            customers lined up at the truck. Each sandwich is made to order—no
+            premade meals here—served hot and fresh, the ultimate comfort food
+            on the go.
           </p>
-         </section>
+        </section>
 
         <!-- Events Section -->
         <section id="events">
@@ -125,7 +160,11 @@
           <h4>
             If you would like to send us a message please fill out this form
           </h4>
-          <form id="contactForm" action="https://formspree.io/f/xvgogggl" method="POST">
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/xvgogggl"
+            method="POST"
+          >
             <label for="fName">First Name:</label>
             <input type="text" name="fName" id="fName" required />
 
@@ -143,7 +182,6 @@
 
             <input type="submit" value="Send Visit Request" />
           </form>
-
         </section>
 
         <!-- Contact Us Section -->
@@ -159,16 +197,35 @@
           </p>
           <h2>Follow Us:</h2>
           <div class="social-media">
-            <a href="https://www.facebook.com/Steakinit1"><img src="./img/Facebooknew.png" alt="facebook"></a>
-            <a href="https://twitter.com/Steakinit1"><img src="./img/xlogo.png" alt="X"></a>
-            <a href="https://www.instagram.com/steakinit/"><img src="./img/insta.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/Steakinit1"
+              ><img src="./img/Facebooknew.png" alt="facebook"
+            /></a>
+            <a href="https://twitter.com/Steakinit1"
+              ><img src="./img/xlogo.png" alt="X"
+            /></a>
+            <a href="https://www.instagram.com/steakinit/"
+              ><img src="./img/insta.png" alt="Instagram"
+            /></a>
           </div>
-          
         </section>
         <section>
-          <iframe src="https://embedsocial.com/api/pro_hashtag/eecf8153ca509b09715cbecb2939ef2be99cba5b" width="900px" height="1200px" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-          <iframe src="https://embedsocial.com/api/pro_hashtag/d71e85fbc04559cd332019d17d8bf7c3b048beb2" width="900px" height="1200px" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-      </section>
+          <iframe
+            src="https://embedsocial.com/api/pro_hashtag/eecf8153ca509b09715cbecb2939ef2be99cba5b"
+            width="900px"
+            height="1200px"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+          <iframe
+            src="https://embedsocial.com/api/pro_hashtag/d71e85fbc04559cd332019d17d8bf7c3b048beb2"
+            width="900px"
+            height="1200px"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+        </section>
       </main>
       <footer>
         <p>&copy; 2024 Steak-In-It. All rights reserved.</p>
