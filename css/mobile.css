@@ -23,6 +23,10 @@ nav {
   margin-right: 9em;
 }
 
+main {
+  text-align: center;
+}
+
 #container section#welcome {
   padding-top: 20px; /* Adjust this value to ensure h1 is not cut off */
 }

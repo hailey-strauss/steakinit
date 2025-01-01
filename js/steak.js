@@ -70,20 +70,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Updated November events
   const events = [
-    { date: "11/1", event: "Caius Farm Brewing" },
-    { date: "11/2", event: "White Hills Distillery" },
-    { date: "11/3", event: "Black Hog Brewing" },
-    { date: "11/6-11/10", event: "Tribus Beer Co." },
-    { date: "11/12", event: "Quinnipiac" },
-    { date: "11/13", event: "Aquilas Nest Vineyards" },
-    { date: "11/14", event: "Caius Farm Brewing" },
-    { date: "11/15", event: "Tribus Beer Co." },
-    { date: "11/16", event: "New England Brewing Co" },
-    { date: "11/17", event: "White Hills Distillery" },
-    { date: "11/20", event: "The Anchorage Apartments" },
-    { date: "11/22", event: "Black Hog Brewing" },
-    { date: "11/23", event: "Caius Farm Brewing" },
-    { date: "11/30", event: "Sticks For Soldiers" },
+    { date: "1/4", event: "Charter Oak Brewing" },
+    { date: "1/8-1/12", event: "Tribus Beer Co." },
+    { date: "1/17", event: "Black Hog Brewing" },
+    { date: "1/19", event: "The Curb Apartments" },
+    { date: "1/20", event: "Aquilas Nest Vineyards" },
+    { date: "1/25", event: "Black Hog Brewing" },
+    { date: "1/26", event: "Charter Oak Brewing" },
+    { date: "1/29-1/31", event: "Tribus Beer Co" },
   ];
 
   window.onload = () => {

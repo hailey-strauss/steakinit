@@ -1,5 +1,6 @@
 body {
   background-color: black; /* Fallback color */
+  background-image: url("../img/SteakInItBackgroundFinal.png");
 }
 
 /* Style for body specifies a background color */
@@ -28,7 +29,6 @@ nav {
   width: 100%;
   position: sticky;
   top: 0;
-  background-color: black;
 }
 
 /* Ensure ul is inline-block to center it */
@@ -265,9 +265,6 @@ footer {
 
 @media only screen and (min-width: 830px) {
   /* Style specifies width for container */
-  #container {
-    background-color: black;
-  }
 
   /* Style to left align header */
   header {
