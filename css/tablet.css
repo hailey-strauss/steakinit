@@ -1,0 +1,138 @@
+/* Media query for tablet layout targets screen size with a minimum width of 660px.  */
+
+@media only screen and (min-width: 660px) {
+  header {
+    text-align: center; /* Center align content */
+    margin-bottom: 20px; /* Add some space below the logo */
+  }
+
+  /* Style for the header image */
+  header img {
+    max-width: 100%; /* Make sure the logo doesn't exceed the width of its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  nav {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+
+  /* Ensure ul is inline-block to center it */
+  nav ul {
+    display: flex;
+    justify-content: space-around; /* Distributes the items evenly */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Removes default list styling */
+    width: 100%; /* Adjust this width to control the spacing of nav items */
+  }
+  nav ul {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  nav li {
+    margin: 0 20px;
+  }
+
+  #container section#welcome {
+    padding-top: 30px; /* Adjust this value to ensure h1 is not cut off */
+  }
+
+  /* Style specifies a horizontal display for navigation links */
+  nav li {
+    display: inline;
+    float: left;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-left: 0;
+    padding-right: 0;
+    width: 18%;
+    white-space: nowrap;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  /* Style specifies a horizontal display for navigation links */
+  nav ul {
+    justify-content: space-between;
+  }
+  /* Style specifies clear and top margin properties for the main element */
+  main {
+    clear: left;
+    margin-top: -0.3em;
+    border-radius: 0;
+    overflow: auto;
+  }
+
+  /* Style specifies to hide the mobile class */
+  .mobile {
+    display: inline;
+    color: white;
+  }
+
+  /* Style specifies to display the desktop class */
+  .desktop {
+    display: inline;
+  }
+
+  /* Style specifies a display, float, and padding for the equip class */
+  .equip {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+  }
+
+  /* Style specifies to display the tablet class */
+  .tablet {
+    display: block;
+    margin-top: -3em;
+    margin-bottom: -1em;
+  }
+
+  /* Style for the banner image */
+  #banner img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0000ff;
+    color: #fff;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #0000ff;
+  }
+
+  /* Target email links with mailto attribute */
+  .contact {
+    color: white;
+  }
+}
