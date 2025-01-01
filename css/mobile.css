@@ -1,0 +1,92 @@
+/* Media query for mobile layout targets screens with a maximum width of 659px. */
+@media only screen and (max-width: 659px) {
+  /* Hide images within the section element */
+  section img {
+    display: none;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+}
+nav {
+  margin-top: 30px;
+  margin-right: 9em;
+}
+
+#container section#welcome {
+  padding-top: 20px; /* Adjust this value to ensure h1 is not cut off */
+}
+
+/* Style for the header specifies top margin, background color, rounded corners, and center align content */
+header {
+  text-align: center; /* Center align content */
+  margin-bottom: 20px; /* Add some space below the logo */
+}
+
+/* Style for the header image */
+header img {
+  max-width: 100%; /* Make sure the logo doesn't exceed the width of its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Style hides the tablet class */
+.tablet {
+  display: none;
+}
+
+/* Style rule specifies to not display the equip class */
+.equip {
+  display: none;
+}
+
+.mobile {
+  color: white;
+  display: inline;
+}
+
+/* Target email links with mailto attribute */
+.contact {
+  color: white;
+}
+
+/* Form Styles */
+form {
+  margin-top: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0000ff;
+  color: #fff;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #0000ff;
+}
