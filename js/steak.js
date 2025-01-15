@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const events = [
     { date: "1/4", event: "Charter Oak Brewing" },
     { date: "1/8-1/12", event: "Tribus Beer Co." },
-    { date: "1/17", event: "Black Hog Brewing" },
+    { date: "1/17", event: "University of Bridgeport" },
     { date: "1/19", event: "The Curb Apartments" },
     { date: "1/20", event: "Aquilas Nest Vineyards" },
     { date: "1/25", event: "Black Hog Brewing" },
