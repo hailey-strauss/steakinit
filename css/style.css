@@ -1,6 +1,6 @@
 body {
   background-color: black; /* Fallback color */
-  background-image: url("../img/SteakInITBackground1.png");
+  background-image: url("../img/SteakInITBackground1final.png");
 }
 
 /* Style for body specifies a background color */
@@ -152,6 +152,7 @@ main {
 /* Style for the contact section */
 #contact {
   text-align: center; /* Center align text inside the contact section */
+  font-weight: bolder;
   margin: 0 auto; /* Center align the section itself */
   padding: 20px; /* Add padding for spacing */
   max-width: 600px; /* Adjust the max-width to your preference */
