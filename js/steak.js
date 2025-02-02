@@ -70,14 +70,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Updated November events
   const events = [
-    { date: "1/4", event: "Charter Oak Brewing" },
-    { date: "1/8-1/12", event: "Tribus Beer Co." },
-    { date: "1/17", event: "University of Bridgeport" },
-    { date: "1/19", event: "The Curb Apartments" },
-    { date: "1/20", event: "Aquilas Nest Vineyards" },
-    { date: "1/25", event: "Black Hog Brewing" },
-    { date: "1/26", event: "Charter Oak Brewing" },
-    { date: "1/29-1/31", event: "Tribus Beer Co" },
+    { date: "2/1-2/2", event: "Tribus Beer Co" },
+    { date: "2/3", event: "University of New Haven" },
+    { date: "2/6", event: "Quinnipiac University" },
+    { date: "2/8", event: "Black Hog Brewing" },
+    { date: "2/9", event: "The Curb Apartments" },
+    { date: "2/13", event: "Anchorage Apartments" },
+    { date: "2/19-2/23", event: "Tribus Beer Co" },
+    { date: "2/28", event: "University of New Haven" },
   ];
 
   window.onload = () => {
