@@ -48,12 +48,14 @@
     float: left;
     margin-right: 1%;
     margin-left: 1%;
-    padding-left: 0;
-    padding-right: 0;
-    width: 18%;
+    /* padding-left: 0; */
+    /* padding-right: 0; */
+    /* width: 18%; */
     white-space: nowrap;
-    border-radius: 0;
-    background-color: transparent;
+    /* border-radius: 0; */
+    border-radius: 8px;
+    background-color: black;
+    padding: 8px 16px;
   }
 
   /* Style specifies a horizontal display for navigation links */
