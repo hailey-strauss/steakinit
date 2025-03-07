@@ -1,23 +1,42 @@
 /* Media query for mobile layout targets screens with a maximum width of 659px. */
 @media only screen and (max-width: 659px) {
+  /* Display images within the .social-media section */
+  .social-media img {
+    display: inline-block; /* Make sure the images are displayed inline */
+    width: 30px; /* Adjust size of the images for mobile */
+    height: auto; /* Maintain aspect ratio */
+    margin: 5px; /* Add spacing between images */
+  }
+
   /* Hide images within the section element */
   section img {
     display: none;
   }
+
+  /* Update nav bar styles for mobile layout */
   nav {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row; /* Align items in a row */
+    justify-content: center; /* Center the navigation items */
+    margin-top: 20px; /* Adjust the top margin */
+    margin-right: 0; /* Remove right margin for better mobile layout */
   }
 
   nav ul {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line if needed */
+    justify-content: space-around; /* Evenly space the items */
     width: 100%;
+    padding-left: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
   }
 
   nav li {
-    margin: 5px 0;
+    margin: 5px 0; /* Add margin between list items */
+    background-color: black;
+    padding: 5px 10px; /* Add padding for better touch targets */
   }
 }
+
 nav {
   margin-top: 30px;
   margin-right: 9em;
