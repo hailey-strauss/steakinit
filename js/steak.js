@@ -70,18 +70,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Updated events
   const events = [
-    { date: "3/1-3/2", event: "New England Brewing Co" },
-    { date: "3/3", event: "University of New Haven" },
-    { date: "3/5", event: "Anchorage Apartments" },
-    { date: "3/6", event: "Aquilas Nest Vineyards" },
-    { date: "3/7", event: "Black Hog Brewing" },
-    { date: "3/8", event: "New England Brewing Co" },
-    { date: "3/15", event: "Charter Oak Brewing" },
-    { date: "3/16", event: "The Curb Apartments" },
-    { date: "3/19-3/23", event: "Tribus Brewing Co" },
-    { date: "3/29", event: "Black Hog Brewing" },
-    { date: "3/30", event: "New England Brewing Co" },
-    { date: "3/31", event: "Quinnipiac University" },
+    { date: "4/2-4/6", event: "Tribus Brewing Co" },
+    { date: "4/9", event: "Anchorage Apartments" },
+    { date: "4/10", event: "Anchorage Apartments" },
+    { date: "4/15", event: "Quinnipiac University" },
+    { date: "4/23", event: "Aquilas Nest Vineyards" },
+    { date: "4/24", event: "Black Hog Brewing" },
+    { date: "4/26", event: "New England Brewing Co" },
+    { date: "4/27", event: "Legends Auto Boutique" },
+    { date: "4/30", event: "Tribus Brewing Co" },
   ];
 
   window.onload = () => {
