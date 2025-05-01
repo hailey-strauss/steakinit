@@ -71,25 +71,21 @@ document.addEventListener("DOMContentLoaded", function () {
   // Updated events
   const events = [
     { date: "5/1", event: "Tribus Beer Co" },
-    { date: "5/2", event: "Stamford Beer Garden" },
-    { date: "5/3", event: "Stamford Beer Garden" },
+    { date: "5/2-5/3", event: "Stamford Beer Garden" },
     { date: "5/6", event: "The Curb Apartments" },
     { date: "5/7", event: "Stamford Beer Garden" },
     { date: "5/9", event: "Charter Oak Brewing" },
     { date: "5/10", event: "Black Hog Brewing" },
-    { date: "5/14", event: "Aquilas Nest Vineyards" },
-    { date: "5/15", event: "Aquilas Nest Vineyards" },
+    { date: "5/14-5/15", event: "Aquilas Nest Vineyards" },
     { date: "5/16", event: "Caius Farm Brewing" },
-    { date: "5/17", event: "Stamford Beer Garden" },
-    { date: "5/18", event: "Stamford Beer Garden" },
+    { date: "5/17-5/18", event: "Stamford Beer Garden" },
     { date: "5/20", event: "The Curb Apartments" },
     { date: "5/21", event: "Tribus Beer Co" },
     { date: "5/23", event: "Stamford Beer Garden" },
     { date: "5/24", event: "Caius Farm Brewery" },
     { date: "5/25", event: "Aquilas Nest Vineyards" },
     { date: "5/28", event: "Stamford Beer Garden" },
-    { date: "5/30", event: "Shelton Food Trucks on the River" },
-    { date: "5/31", event: "Shelton Food Trucks on the River" },
+    { date: "5/30-5/31", event: "Shelton Food Trucks on the River" },
   ];
 
   window.onload = () => {
