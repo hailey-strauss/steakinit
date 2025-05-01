@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { date: "5/6", event: "The Curb Apartments" },
     { date: "5/7", event: "Stamford Beer Garden" },
     { date: "5/9", event: "Charter Oak Brewing" },
-    { date: "5/10", event: "Black Hog Brewing" },
+    { date: "5/10", event: "Reverie Brewing" },
     { date: "5/14-5/15", event: "Aquilas Nest Vineyards" },
     { date: "5/16", event: "Caius Farm Brewing" },
     { date: "5/17-5/18", event: "Stamford Beer Garden" },
