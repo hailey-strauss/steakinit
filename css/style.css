@@ -363,6 +363,21 @@ footer {
   }
 }
 
+.rounded-button {
+  background-color: #90ee90; /* You can change the color */
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px; /* Makes the sides rounded */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rounded-button:hover {
+  background-color: #4ca1a1; /* Slightly darker on hover */
+}
+
 /* Keyframes for fadeInUp animation */
 @keyframes fadeInUp {
   0% {
