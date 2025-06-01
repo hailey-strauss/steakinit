@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Updated events
   const events = [
     { date: "6/1", event: "Aquilas Nest Vineyards" },
+    { date: "6/3", event: "The Curb Apartments" },
     { date: "6/4", event: "Aquilas Nest Vineyards" },
     { date: "6/6", event: "Caius Farm Brewing" },
     { date: "6/7", event: "Stamford Beer Garden" },
@@ -80,11 +81,14 @@ document.addEventListener("DOMContentLoaded", function () {
     { date: "6/13", event: "Aquilas Nest Vineyards" },
     { date: "6/14", event: "Stamford Beer Garden" },
     { date: "6/15", event: "Aquilas Nest Vineyards" },
+    { date: "6/17", event: "Private Event" },
     { date: "6/18", event: "Aquilas Nest Vineyards" },
     { date: "6/19", event: "Tribus Beer Co" },
     { date: "6/20", event: "Tribus Beer Co" },
+    { date: "6/20", event: "The Curb Apartments" },
     { date: "6/21", event: "Tribus Beer Co" },
     { date: "6/22", event: "Tribus Beer Co" },
+    { date: "6/24", event: "The Curb Apartments" },
     { date: "6/25", event: "Stamford Beer Garden" },
     { date: "6/26", event: "Twelve Percent Beer Project" },
     { date: "6/27", event: "Caius Farm Brewing" },
