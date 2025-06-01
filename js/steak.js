@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { date: "6/25", event: "Stamford Beer Garden" },
     { date: "6/26", event: "Twelve Percent Beer Project" },
     { date: "6/27", event: "Caius Farm Brewing" },
-    { date: "6/28", event: "Aquilas Nest Vineyards" },
+    { date: "6/28", event: "Stony Creek Brewery" },
     { date: "6/29", event: "Charger Oak Brewing" },
   ];
 
