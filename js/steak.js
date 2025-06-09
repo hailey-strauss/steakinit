@@ -70,12 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Updated events
   const events = [
-    { date: "6/1", event: "Aquilas Nest Vineyards" },
-    { date: "6/3", event: "The Curb Apartments" },
-    { date: "6/4", event: "Aquilas Nest Vineyards" },
-    { date: "6/6", event: "Caius Farm Brewing" },
-    { date: "6/7", event: "Stamford Beer Garden" },
-    { date: "6/8", event: "Car Show at Fairfield Ludlowe High School" },
     { date: "6/10", event: "The Curb Apartments" },
     { date: "6/11", event: "Aquilas Nest Vineyards" },
     { date: "6/12", event: "Black Hog Brewing" },
