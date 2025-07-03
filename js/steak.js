@@ -69,23 +69,23 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 3000);
 
   // Updated events
-  const events = [
-    { date: "6/10", event: "The Curb Apartments" },
-    { date: "6/11", event: "Aquilas Nest Vineyards" },
-    { date: "6/12", event: "Black Hog Brewing" },
-    { date: "6/13", event: "Aquilas Nest Vineyards" },
-    { date: "6/14", event: "Stamford Beer Garden" },
-    { date: "6/15", event: "Aquilas Nest Vineyards" },
-    { date: "6/17", event: "Private Event" },
-    { date: "6/18", event: "Aquilas Nest Vineyards" },
-    { date: "6/19–6/22", event: "Tribus Beer Co" },
-    { date: "6/24", event: "The Curb Apartments" },
-    { date: "6/25", event: "Stamford Beer Garden" },
-    { date: "6/26", event: "Twelve Percent Beer Project" },
-    { date: "6/27", event: "Caius Farm Brewing" },
-    { date: "6/28", event: "Stony Creek Brewery" },
-    { date: "6/29", event: "Charger Oak Brewing" },
-  ];
+  // const events = [
+  //   { date: "6/10", event: "The Curb Apartments" },
+  //   { date: "6/11", event: "Aquilas Nest Vineyards" },
+  //   { date: "6/12", event: "Black Hog Brewing" },
+  //   { date: "6/13", event: "Aquilas Nest Vineyards" },
+  //   { date: "6/14", event: "Stamford Beer Garden" },
+  //   { date: "6/15", event: "Aquilas Nest Vineyards" },
+  //   { date: "6/17", event: "Private Event" },
+  //   { date: "6/18", event: "Aquilas Nest Vineyards" },
+  //   { date: "6/19–6/22", event: "Tribus Beer Co" },
+  //   { date: "6/24", event: "The Curb Apartments" },
+  //   { date: "6/25", event: "Stamford Beer Garden" },
+  //   { date: "6/26", event: "Twelve Percent Beer Project" },
+  //   { date: "6/27", event: "Caius Farm Brewing" },
+  //   { date: "6/28", event: "Stony Creek Brewery" },
+  //   { date: "6/29", event: "Charger Oak Brewing" },
+  // ];
 
   window.onload = () => {
     if (popup) {
