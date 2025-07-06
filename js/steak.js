@@ -25,6 +25,29 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  // Video playback functionality
+  const video = document.getElementById("myVideo");
+
+  if (video) {
+    video.muted = true;
+    video.loop = true;
+    video.playsinline = true;
+
+    // Try to play the video
+    video.play().catch((error) => {
+      // If autoplay is blocked, try to play when user interacts with the page
+      document.addEventListener(
+        "touchstart",
+        function playVideo() {
+          video.play().catch(() => {});
+          // Remove this listener after first attempt
+          document.removeEventListener("touchstart", playVideo);
+        },
+        { once: true }
+      );
+    });
+  }
+
   // Attach the toggleMenu function to the hamburger menu click
   const hamburger = document.querySelector(".hamburger-menu");
   if (hamburger) {
